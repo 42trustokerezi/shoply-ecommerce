@@ -27,7 +27,7 @@ const ProductDetail = () => {
         return () => {
             dispatch(removeSelectedProduct())
         }
-    },[productId])
+    },[productId, dispatch])
     return(
         <div className="ui grid container">
             {Object.keys(product).length === 0 ? (
